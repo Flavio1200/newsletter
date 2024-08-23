@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="/code.js"></script>
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+  <dialog id="modal">
+    <img src="/assets/images/icon-success.svg" alt="check">
+    <h2>Thanks for <br> subscribing!</h2>
+    <p>A confirmation email has been sent to <br> <b>ash@loremcompany.com.</b> 
+      Please open it and click <br> the button inside to confirm your subscription.</p>
+      <button id="close">Dismiss message</button>
+  </dialog>
+  <main class="cont">
+    <div class="form-part">
+      <h1 class="title">Stay updated!</h1>
+      <p class="text">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="list">
+        <li>
+          <p class="info"><span><img src="/assets/images/icon-list.svg" alt="check"></span> Product discovery and building what matters</p>
+        </li>
+        <li>
+          <p class="info"><span><img src="/assets/images/icon-list.svg" alt="check"></span> Measuring to ensure updates are a success</p>
+        </li>
+        <li>
+          <p class="info"><span><img src="/assets/images/icon-list.svg" alt="check"></span> And much more!</p>
+        </li>
+      </ul>
+      <form class="contact">
+        <div class="div">
+          <label for="email" class="tag">Email address</label> 
+          <p id="error" class="error">valid email required</p>
+        </div>
+        <input type="email" name="email" placeholder="email@company.com" id="mail">
+        <button type="submit" class="sub" id="open">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <div class="form-part">
+      <div class="img-cont">
+        <img src="/assets/images/illustration-sign-up-desktop.svg" alt="bg" class="desk">
+        <img src="/assets//images/illustration-sign-up-mobile.svg" alt="bg" class="mobile">
+      </div>
+    </div>
+  </main>
+</body>
+</html>
